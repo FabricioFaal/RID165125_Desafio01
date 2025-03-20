@@ -1,0 +1,231 @@
+:root{
+    --azulDnc: #0C70F2;
+    --pretoDnc: #303030;
+    --corLetra: #FFFFFF;
+    --cinzaHover: #C9C9C9;
+    --fontePadrao: 'Inter';
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fontePadrao);
+    background-color: #F2F2F2;
+}
+#menuPrincipal{
+    width: 100%;
+    height: 100px;
+    background-color:var(--azulDnc);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+#menuPrincipal div a:hover{
+    color: var(--cinzaHover);
+}
+#menuPrincipal div a{
+    font-size: px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#menu h1{
+    color: var(--corLetra);
+    font-size: 50px;
+    font-weight: 800;
+    padding-right:  600px;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+header{
+    color: var(--pretoDnc);
+    font-family: var(--fontePadrao);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40.51px;
+    text-align: left;
+}
+header img{
+    width: 25%;
+}
+
+
+
+
+form{
+    color: var(--pretoDnc);
+    font-family: var(--fontePadrao);
+    font-size: 20px;
+    font-weight: 400;
+    width: 500px;
+    background: var(--corLetra);
+    border-radius: 30px;
+    padding: 50px;
+    margin-top: 100px;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form input{
+    background-color: #F2F2F2E5;
+    font-size: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
+}
+form label{
+    margin: 10px 0px 10px 0px;
+}
+
+.formItens {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.formItens input {
+    width: 100%;
+}
+
+
+button {
+    background-color: rgba(12, 112, 242, 0.9);
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#resultadocep{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#tituloscep{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: var(--azulDnc);
+    color: var(--corLetra);
+    width: 500px;
+}
+#respostascep{
+    display:flex;
+    justify-content: space-around;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: var(--corLetra);
+    color: var(--pretoDnc);
+    width: 500px;
+}
+
+
+#regiao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#nuvem{
+    width: 20%;
+    padding-left: 10px;
+}
+#previsaoregiao {
+    width: 550px;
+    background-color: var(--corLetra);
+    color: var(--pretoDnc);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--azulDnc);
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--azulDnc);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer .linha1{
+    display: flex;
+    justify-content: right;
+    padding: 10px 50px 10px 10px;
+
+}
+footer .linha1 a{
+    color: var(--corLetra);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+footer .linha1 a:first-child{
+    border-right: 3px solid var(--corLetra);
+    margin-right: 10px;
+    padding-right: 10px;
+}
+footer .linha1 a:hover{
+    color: var(--cinzaHover);
+}

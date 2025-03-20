@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DncWeather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--MENU SUPERIOR-->
+    <nav id="menuPrincipal">
+        <div id="menu">
+        <h1>DncWeather</h1>
+        <a href="">Endereços</a>
+        <a href="">Previsão do tempo</a>    
+        </div>
+    </nav>
+
+
+    <!--MENU INFORMAÇÃO-->
+    <section>
+        <header>
+                 <h1>Descubra Mais com Precisão: <br>
+                 Previsões do Tempo e endereços <br>
+                 em tempo real.</h1>
+                 <img src="imagemprevisão.svg" alt="">
+        </header>
+
+        <form>
+            <div class="formGroup">
+                <label for="nome">Primeiro Nome:</label>
+                <input type="text" id="nome" placeholder="Insira seu primeiro nome">
+            </div>
+            <div class="formGroup">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Insira seu e-mail">
+            </div>
+            <div class="formGroup">
+                <label for="cep">Digite seu CEP:</label>
+                <input type="text" id="cep" placeholder="Digite o CEP" maxlength="8">
+            </div>
+            <div class="formGroup">
+                <label for="latElon">Digite a latitude e longitude para saber a previsão:</label>
+                <div class="formItens">
+                    <input type="text" id="latitude" placeholder="Latitude">
+                    <input type="text" id="longitude" placeholder="Longitude">
+                </div>
+            </div>
+            <button type="button" onclick="buscarDados()">Acessar</button>
+        </form>
+
+
+
+        <div>
+            <div id="resultadocep">
+            <h1>Resultado da busca por CEP:</h1>
+            <img id="cep" src="cep.svg" alt="">
+            </div>
+
+            <div id="resultado2cep">
+            <div id="tituloscep">
+                <p >Logradouro/nome</p>
+                <p >Bairro/Distrito</p>
+                <p >Localidade/UF</p>
+            </div>
+
+            <div id="respostascep">
+                <p><span id="rua">---</span></p>
+                <p><span id="bairro">---</span></p>
+                <p><span id="cidade">---</span></p>
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="regiao">
+            <h1>Previsão do tempo na região:</h1>
+            <img id="nuvem" src="nuvem.svg" alt="">
+            </div>
+            <p id="previsaoregiao"><strong>Previsão de tempo de acordo com a região:</strong> <span id="temperatura">---</span></p>
+        </div>
+
+    </section>
+
+    <!--MENU RODAPÉ-->
+    <footer id="menu-rodape">
+        <div class="linha1">
+        <a href="">Termos de Uso</a>
+        <a href="">Política de Privacidade</a>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
